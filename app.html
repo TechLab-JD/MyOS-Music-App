@@ -1,0 +1,20 @@
+<div class="app-window" id="MusicApp">
+  <div class="app-header">
+    <span class="app-title">🎵 Music</span>
+    <div class="app-controls"><button class="minimize-btn">–</button><button class="close-btn">×</button></div>
+  </div>
+  <div class="app-content">
+    <div class="music">
+      <div class="mu-now" id="mu-now">No track loaded</div>
+      <audio id="mu-audio" controls></audio>
+      <div class="mu-controls">
+        <button id="mu-prev" title="Previous">⏮</button>
+        <button id="mu-next" title="Next">⏭</button>
+        <label class="mu-add">+ Add music<input id="mu-file" type="file" accept="audio/*" multiple hidden></label>
+      </div>
+      <ul id="mu-list" class="mu-list"></ul>
+      <div class="mu-hint">Pick audio files from your device — they play locally, nothing is uploaded.</div>
+    </div>
+  </div>
+  <div class="resize-handle"></div>
+</div>
