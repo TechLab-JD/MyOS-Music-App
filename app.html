@@ -9,11 +9,19 @@
       <audio id="mu-audio" controls></audio>
       <div class="mu-controls">
         <button id="mu-prev" title="Previous">⏮</button>
+        <button id="mu-play" title="Play / Pause">⏯</button>
         <button id="mu-next" title="Next">⏭</button>
-        <label class="mu-add">+ Add music<input id="mu-file" type="file" accept="audio/*" multiple hidden></label>
+        <button id="mu-shuffle" title="Shuffle">🔀</button>
+        <button id="mu-repeat" title="Repeat">🔁</button>
+        <label class="mu-add">+ Add<input id="mu-file" type="file" accept="audio/*" multiple hidden></label>
+      </div>
+      <div class="mu-listbar">
+        <span id="mu-count">0 tracks</span>
+        <button id="mu-sort">Sort A–Z</button>
+        <button id="mu-clear">Clear</button>
       </div>
       <ul id="mu-list" class="mu-list"></ul>
-      <div class="mu-hint">Pick audio files from your device — they play locally, nothing is uploaded.</div>
+      <div class="mu-hint">Files play locally — nothing is uploaded.</div>
     </div>
   </div>
   <div class="resize-handle"></div>
